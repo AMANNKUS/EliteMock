@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Try a free EliteMock nursing practice quiz." />
+  <meta name="theme-color" content="#0b1c3c" />
+  <title>Free Practice | EliteMock</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="site.js" defer></script>
+  <script src="demo-questions.js" defer></script>
+  <script src="demo.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header"><div class="wrap nav-row"><a class="brand" href="./index.html"><span class="brand-mark" aria-hidden="true">E</span><span class="brand-name">Elite<span>Mock</span><small>by EliteNurses</small></span></a><a class="back-link" href="./index.html">← Back to courses</a></div></header>
+  <main id="main" class="demo-main"><div class="wrap quiz-wrap"><div class="quiz-intro"><p class="section-tag">FREE PREVIEW</p><h1>General Nursing Practice</h1><p>Five demonstration questions with educational rationales. No account or payment is required.</p></div>
+    <div id="quiz-app" class="quiz-shell" aria-live="polite">
+      <section id="demo-start" class="quiz-stage">
+        <div class="quiz-stage-top"><span class="course-badge live">Free sample</span><span>5 questions • Untimed</span></div>
+        <h2>Ready to practise?</h2><p>Choose one answer per question. Review your results and the explanation for every option after submission.</p>
+        <button id="demo-start-btn" class="btn btn-primary" type="button">Begin free practice <span aria-hidden="true">→</span></button>
+      </section>
+      <section id="demo-questions-screen" class="quiz-stage" hidden>
+        <div class="quiz-stage-top"><strong id="question-count">Question 1 of 5</strong><span id="answered-count">0 answered</span></div>
+        <div class="quiz-progress-track"><div id="quiz-progress-fill" class="quiz-progress-fill"></div></div>
+        <h2 id="demo-question-text" class="demo-question-title"></h2>
+        <fieldset id="demo-options" class="demo-options"><legend class="visually-hidden">Choose an answer</legend></fieldset>
+        <div class="quiz-controls"><button id="demo-prev" type="button" class="btn btn-secondary">Previous</button><button id="demo-next" type="button" class="btn btn-primary">Next <span aria-hidden="true">→</span></button><button id="demo-submit" type="button" class="btn btn-primary" hidden>Submit and review</button></div>
+      </section>
+      <section id="demo-results" class="quiz-stage" hidden><span class="course-badge live">Completed</span><h2>Your sample result</h2><p id="demo-score" class="score-large"></p><p id="demo-summary"></p><div id="demo-review" class="review-list"></div><div class="quiz-controls"><button id="demo-restart" class="btn btn-primary" type="button">Try again</button><a class="btn btn-secondary" href="./index.html">Back to courses</a></div></section>
+    </div>
+    <p class="disclaimer">These are original demonstration questions. They are not an official examination paper. Paid questions, payment processing and student accounts are not included in this public preview.</p>
+  </div></main>
+  <footer class="footer"><div class="wrap footer-flex"><p>EliteMock by EliteNurses • Independent nursing exam preparation</p><small>© <span id="year"></span></small></div></footer>
+</body>
+</html>

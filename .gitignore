@@ -1,0 +1,9 @@
+# Private question bank and future API secrets - NEVER upload these to public GitHub.
+private/
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+.DS_Store
+node_modules/
