@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Reset Password | EliteMock</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="config.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="supabase-client.js"></script>
+  <script src="reset.js" defer></script>
+</head>
+<body>
+  <header class="site-header"><div class="wrap nav-row"><a class="brand" href="./index.html"><span class="brand-mark">E</span><span class="brand-name">Elite<span>Mock</span><small>by EliteNurses</small></span></a><a class="back-link" href="./auth.html">← Login</a></div></header>
+  <main class="account-main"><div class="account-card">
+    <p class="section-tag">ACCOUNT SECURITY</p><h1>Set a new password</h1>
+    <p class="account-subtitle">Open this page using the password-reset link from your email.</p>
+    <form id="reset-form"><div class="field"><label for="new-password">New password</label><input id="new-password" type="password" autocomplete="new-password" minlength="8" required /></div><button id="reset-submit" type="submit" class="btn btn-primary account-submit" disabled>Update password</button></form>
+    <p id="reset-message" class="form-message" aria-live="polite" role="status">Checking the recovery link…</p>
+  </div></main>
+</body>
+</html>
