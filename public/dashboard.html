@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>My Dashboard | EliteMock</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="config.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="supabase-client.js"></script>
+  <script src="dashboard.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header"><div class="wrap nav-row">
+    <a class="brand" href="./index.html"><span class="brand-mark" aria-hidden="true">E</span><span class="brand-name">Elite<span>Mock</span><small>by EliteNurses</small></span></a>
+    <button id="signout" class="btn btn-secondary" type="button">Sign out</button>
+  </div></header>
+  <main id="main" class="account-main"><div class="dashboard-wrap">
+    <p class="section-tag">STUDENT DASHBOARD</p>
+    <h1 id="welcome">Checking your account…</h1>
+    <p id="student-email" class="account-subtitle"></p>
+    <p id="dashboard-message" role="status" aria-live="polite"></p>
+    <div class="dashboard-banner"><strong>Your account is active.</strong><p>Test payments only. You can simulate a GH₵15 checkout below; no real money will be collected. The test grants a TEST entitlement, not access to paid questions. Full practice content will be added in a later phase.</p></div>
+    <h2>Available courses</h2>
+    <div id="course-list" class="dashboard-courses" aria-live="polite"><p>Loading courses…</p></div>
+    <div class="dashboard-actions"><a class="btn btn-primary" href="./demo.html">Try free practice</a><a class="btn btn-secondary" href="./index.html">Browse home page</a></div>
+  </div></main>
+  <footer class="footer"><div class="wrap footer-flex"><p>EliteMock by EliteNurses • Student account pilot</p><small>Test payments only — no real charges</small></div></footer>
+</body>
+</html>

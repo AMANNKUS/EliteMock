@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Create or access your EliteMock student account." />
+  <title>Student Login | EliteMock</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="config.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="supabase-client.js"></script>
+  <script src="auth.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header"><div class="wrap nav-row">
+    <a class="brand" href="./index.html"><span class="brand-mark" aria-hidden="true">E</span><span class="brand-name">Elite<span>Mock</span><small>by EliteNurses</small></span></a>
+    <a class="back-link" href="./index.html">← Back to home</a>
+  </div></header>
+  <main id="main" class="account-main"><div class="account-card">
+    <p class="section-tag">STUDENT ACCESS</p>
+    <h1 id="auth-heading">Welcome back.</h1>
+    <p class="account-subtitle">Sign in to your EliteMock student account. The paid question bank is not yet available.</p>
+    <div class="account-tabs" role="group" aria-label="Select account action">
+      <button id="tab-login" type="button" class="tab is-active" aria-pressed="true">Sign in</button>
+      <button id="tab-register" type="button" class="tab" aria-pressed="false">Create account</button>
+    </div>
+    <form id="auth-form" autocomplete="on">
+      <div class="field" id="name-field" hidden><label for="full-name">Full name</label><input id="full-name" name="name" autocomplete="name" maxlength="100" placeholder="Your full name" /></div>
+      <div class="field"><label for="email">Email address</label><input id="email" name="email" type="email" autocomplete="email" required placeholder="student@example.com" /></div>
+      <div class="field"><label for="password">Password</label><input id="password" name="password" type="password" autocomplete="current-password" required minlength="8" placeholder="At least 8 characters" /></div>
+      <button id="auth-submit" class="btn btn-primary account-submit" type="submit">Sign in</button>
+    </form>
+    <button id="forgot-password" type="button" class="inline-action">Forgot your password?</button>
+    <p id="auth-message" class="form-message" role="status" aria-live="polite"></p>
+    <p class="account-note"><strong>Pilot notice:</strong> Supabase's default email service can confirm only authorised project-team email addresses. Before opening registration to all students, configure an external SMTP provider. No payments are being collected here.</p>
+  </div></main>
+  <footer class="footer"><div class="wrap footer-flex"><p>EliteMock by EliteNurses • Independent examination preparation</p><small>Student account pilot</small></div></footer>
+</body>
+</html>
