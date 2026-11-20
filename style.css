@@ -49,3 +49,7 @@ h1,h2,h3,p{margin-top:0}.hero h1{font-size:clamp(40px,5vw,65px);letter-spacing:-
 .dashboard-wrap h2{font-size:23px;letter-spacing:-.03em}.dashboard-courses{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
 .dashboard-course{background:#fff;border:1px solid var(--line);border-radius:15px;padding:20px}.dashboard-course h3{margin:0 0 6px;font-size:18px}.dashboard-course p{font-size:13px;color:var(--muted);min-height:48px}.dashboard-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
 @media(max-width:620px){.dashboard-courses{grid-template-columns:1fr}.account-main{padding:30px 16px 50px}}
+
+/* Phase 3 test checkout styling */
+.dashboard-course .btn {margin-top:8px;}
+.dashboard-course .course-badge {white-space:normal;line-height:1.4;}
