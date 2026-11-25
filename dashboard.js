@@ -65,13 +65,20 @@
       note.className = "course-badge";
       const entitlement = (grants || []).find(g => g.course_id === course.id && (!g.expires_at || new Date(g.expires_at) > current));
       if (entitlement?.payment_mode === "test") {
-        note.textContent = "TEST access recorded — questions not yet published";
+        note.textContent = "TEST access recorded — open General Paper practice when available";
       } else if (entitlement?.payment_mode === "live") {
         note.textContent = "Access recorded — examination content coming later";
       } else {
         note.textContent = "Paid questions not yet available";
       }
       item.append(heading, description, note);
+      if (course.id === "general-paper" && entitlement?.payment_mode === "test") {
+        const link = document.createElement("a");
+        link.className = "btn btn-primary";
+        link.href = "./general-paper.html";
+        link.textContent = "Open General Paper TEST Quiz";
+        item.append(link);
+      }
       if (course.id === "general-paper" && !entitlement) {
         const price = document.createElement("p");
         price.textContent = "GH₵15.00 TEST checkout · no real payment";
