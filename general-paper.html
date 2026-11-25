@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>General Paper — Protected TEST Quiz | EliteMock</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="config.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="supabase-client.js"></script>
+  <script src="general-paper.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header"><div class="wrap nav-row">
+    <a class="brand" href="./index.html"><span class="brand-mark" aria-hidden="true">E</span><span class="brand-name">Elite<span>Mock</span><small>by EliteNurses</small></span></a>
+    <a href="./dashboard.html" class="btn btn-secondary">My Dashboard</a>
+  </div></header>
+  <main id="main" class="account-main">
+    <div class="dashboard-wrap">
+      <p class="section-tag">PROTECTED TEST EXAMINATION</p>
+      <h1>General Paper</h1>
+      <p class="account-subtitle">Only students with a verified test purchase can open this quiz.</p>
+      <p id="exam-message" class="form-message" role="status" aria-live="polite">Checking your student account and course access…</p>
+      <section id="exam-area" class="quiz-shell" hidden>
+        <div class="quiz-stage">
+          <div class="quiz-stage-top">
+            <strong id="exam-progress">Question 1</strong>
+            <strong id="exam-timer" aria-live="off">Time: --:--</strong>
+          </div>
+          <div class="quiz-progress-track"><div class="quiz-progress-fill" id="exam-progress-bar" style="width:0"></div></div>
+          <h2 id="exam-question" class="demo-question-title"></h2>
+          <fieldset class="demo-options" id="exam-options"><legend class="visually-hidden">Choose one answer</legend></fieldset>
+          <div class="quiz-controls">
+            <button id="exam-prev" type="button" class="btn btn-secondary">Previous</button>
+            <button id="exam-next" type="button" class="btn btn-secondary">Next</button>
+            <button id="exam-submit" type="button" class="btn btn-primary">Submit examination</button>
+          </div>
+          <p class="disclaimer">Answers are saved to your account when you select them. You may reload the page to resume an unfinished attempt.</p>
+        </div>
+      </section>
+      <section id="exam-results" class="quiz-shell" hidden>
+        <div class="quiz-stage">
+          <h2>Examination results</h2>
+          <p class="score-large" id="exam-score"></p>
+          <div class="review-list" id="exam-review"></div>
+          <a class="btn btn-secondary" href="./dashboard.html">Return to dashboard</a>
+        </div>
+      </section>
+    </div>
+  </main>
+  <footer class="footer"><div class="wrap footer-flex"><p>EliteMock by EliteNurses • Protected TEST examination pilot</p><small>No real payment charged</small></div></footer>
+</body>
+</html>
